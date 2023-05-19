@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+}
+
+.calc--container {
+  display: grid;
+  grid-template-rows: auto auto;
+  margin: 20vh auto;
+  background-color: grey;
+  border: 20px solid grey;
+  border-radius: 5%;
+  width: 250px;
+}
+
+.calc--keys {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.number--keys {
+  height: 40px;
+  font-size: larger;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(255, 127, 165);
+  border-radius: 5px;
+
+}
+
+.number--keys:hover {
+  background-color: rgb(233, 55, 100);
+}
+
+.operation--keys {
+  height: 40px;
+  font-size: larger;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(218, 240, 119);
+  border-radius: 5px;
+}
+
+.operation--keys:hover {
+  background-color: rgb(208, 255, 0);
+}
+
+.clear--key {
+  height: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(0, 0, 0);
+  border-radius: 5px;
+  color: white;
+}
+
+.clear--key:hover {
+  background-color: white;
+  color: black;
+}
+
+.equal--key {
+  height: 40px;
+  font-size: xx-large;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: rgb(128, 114, 255);
+  border-radius: 5px;
+}
+
+.equal--key:hover {
+  background-color: rgb(70, 50, 252);
+}
+
+.display--container {
+  border: 2px solid lightgreen;
+  border-radius: 5px;
+  background-color: lightgreen;
+}
+
+#display, #display2 {
+  font-size: 1.5rem;
+  text-align: right;
+  background-color: lightgreen;
+  padding: 0 5px;
+  font-weight: bold;
+}
